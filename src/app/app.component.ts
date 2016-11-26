@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
+import { LoginComponent } from './login/login.component';
+//import { MenuComponent } from './menu/menu.component';
+
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+templateUrl: 'app.component.html',
+  styleUrls: ['./app.component.css'],
 })
+
+
 export class AppComponent {
-  title = 'app works!';
+  title = 'Oh, yeah! baby...';
+  stringInterpolation:string = "This is my string.";
 }

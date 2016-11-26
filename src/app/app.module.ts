@@ -4,10 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { MenuComponent } from './menu/menu.component';
+import { PostComponent } from './post/post.component';
+import { EditComponent } from './edit/edit.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    MenuComponent,
+    PostComponent,
+    EditComponent
+
   ],
   imports: [
     BrowserModule,
@@ -15,6 +25,9 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
+  //start app by grabbing app.component.ts which in turn loads app.component.html
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  stringInterpolation:string = "Hey, Boner...";
+}
