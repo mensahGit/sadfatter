@@ -1,14 +1,60 @@
-h2{
-  color: #9a4a9c;
+.jumbotron h1 {
+  font-family: 'Libre Baskerville',serif;
+  color: #000000;
+}
+h2 {
+  font-family: 'Merriweather', serif;
+  color: #FF9900;
 }
 
-h1{
-  color: #ff9900;
+p {
+  font-family: 'Merriweather', serif;
+  color: #000000;
 }
-p{
-  color:lightgreen;
+
+
+.jumbotron {
+    background-color: #FAA142;
 }
+body {
+    background-color: #FF9900;
+}
+.container {
+padding: 50px;
+}
+
+.logo {
+
+    width: 100%;
+}
+img {
+position: relative;
+left:45%;
+}
+
+ article {
+      border: 2px solid black;
+      padding: 10px;
+      margin: 30px;
+    }
+
+
 
 .moody{
   background-color: #888888;
+}
+
+hr{
+  border: 1px solid #FF9900;
+}
+
+input, textarea{
+    background-color:#FAA142;
+    color: #000000;
+}
+
+select option {
+    margin:10px;
+    background-color:#FAA142;
+    color:#fff;
 }
