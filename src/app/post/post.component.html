@@ -2,12 +2,12 @@
 <h2>POST</h2>
 <h3>Coming from post...</h3>
 
-<form class="form-horizontal" action="">
+<form class="form-horizontal" >
 <!-- ISSUE DATE -->
 <div class="form-group">
 <label class="control-label col-sm-2" for="issuedate">Issue Date:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="issuedate" placeholder="Enter issue date..." name="issuedate" value="">
+      <input type="text" class="form-control" id="issuedate" placeholder="Enter issue date..." name="issuedate" #issuedate>
     </div>
   </div>
     <br><br>
@@ -15,7 +15,7 @@
      <div class="form-group">
     <label class="control-label col-sm-2" for="theme">Theme:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="theme" placeholder="Enter theme..." name="theme" value="">
+      <input type="text" class="form-control" id="theme" placeholder="Enter theme..." name="theme" #theme>
     </div>
   </div>
     <br><br>
@@ -208,7 +208,7 @@
     </div>
     <br><br>
     
-    <button (click)="goSubmit()" class="btn btn-lg btn-success" role="button">SUBMIT</button>
+    <button (click)="onSubmit(theme.value, issuedate.value)" class="btn btn-lg btn-success">SUBMIT</button>
     <button (click)="goReset()" class="btn btn-lg btn-danger" role="button">RESET</button>
 
 </form>

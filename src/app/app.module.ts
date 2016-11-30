@@ -12,6 +12,9 @@ import { PostComponent } from './post/post.component';
 import { EditComponent } from './edit/edit.component';
 import { DeleteComponent } from './delete/delete.component'
 
+//IMPORT SERVICES
+import { HttpService } from "./http.service";
+
 //DECLARE COMPONENTS
 @NgModule({
   declarations: [
@@ -28,7 +31,7 @@ import { DeleteComponent } from './delete/delete.component'
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ HttpService ],
   //start app by grabbing app.component.ts which in turn loads app.component.html
   bootstrap: [AppComponent]
 })

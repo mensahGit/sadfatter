@@ -4,7 +4,7 @@
   </div>
 </div>
 <div class="jumbotron text-center">
-<h1>Sadfater DB</h1>
+<h1>Sadfatter DB</h1>
 </div>
 
 <fa-login></fa-login>
@@ -33,3 +33,28 @@
   {{stringInterpolation}}
 </h1>
 <button>ClickChick2</button>
+
+<!--<hr>
+<h1>POST, USER POSTS DATA TO FIREBASE...</h1>
+<label for="username">Username</label>
+<input type="text" id="username" #username>
+<label for="email">E-Mail</label>
+<input type="text" id="email" #email>
+<button (click)="onSubmit(username.value, email.value)">Submit</button>
+<hr>-->
+
+<h1>GET, DATA PULL FROM FIREBASE...</h1>
+<button (click)="onGetData()">Get Data</button>
+<ul>
+  <li *ngFor="let item of items">{{item.theme}}</li>
+</ul>
+
+<hr>
+<h1>ONLOAD, DATA ALREADY IN DATABASE...</h1>
+<p>{{asyncString | async | json }}</p>
+
+
+<hr>
+<h1>GET, PULL KEY FROM FIREBASE...</h1>
+<button (click)="onBusy()">Get Busy</button>
+
